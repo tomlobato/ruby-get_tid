@@ -1,0 +1,3 @@
+Makefile
+thread_info.o
+thread_info.so

@@ -3,11 +3,9 @@
 require './thread_info'
 include ThreadInfo
 
-puts Process.pid
-# a = 1
+puts "Main proccess PID: #{Process.pid}"
 Thread.new{
-    puts get_tid
-    #a += 1 while true
-    sleep 100
+    puts "Thread TID: #{get_tid}"
+    puts `ps axH -o pid,pgid,tid,comm,args -q #{$$}`
 }.join
 
