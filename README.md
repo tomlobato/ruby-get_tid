@@ -30,5 +30,6 @@ Thread TID: 411
 
 ## TODO
 
-- OS conditionals.
+- Portability: currently working only on Linux.
 - Move get_tid method to the Process class.
+- Turn into a gem.
