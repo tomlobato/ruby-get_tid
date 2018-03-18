@@ -1,12 +1,12 @@
 # ruby-get_tid
 
-# Compile
+## Compile
 ```bash
 ruby extconf.rb
 make
 ```
 
-# Test
+## Test
 
 ```bash
 tom@vm1:~/ruby-get_tid# ./test.rb
