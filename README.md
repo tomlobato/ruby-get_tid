@@ -6,6 +6,10 @@ man 2 gettid:
 In a single-threaded process, the thread ID is equal to the process ID (PID, as returned by getpid(2)).  
 In a multithreaded process, all threads have the same PID, but each one has a unique TID."
 
+## Why?
+
+While Thread.current.object_id is great for internal thread identification, external tools (eg.: monitors) needs an OS identifier for them, for instance to get the resources stats of a specific thread.
+
 ## Compile
 ```bash
 ruby extconf.rb
