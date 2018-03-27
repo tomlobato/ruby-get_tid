@@ -19,7 +19,7 @@ make
 ## Test
 
 test.rb:
-```
+```ruby
 require './thread_info'
 include ThreadInfo
 
